@@ -1,0 +1,1 @@
+EDAddNotification("am_vit" , T"豪华午餐时间到了，你闻到鸡腿的香味了么？"  , "repeated" , "12:00")
