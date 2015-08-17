@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+<body>
+
+<form action="change_version.php" method="post" enctype="multipart/form-data">
+    <div>
+        <label for="version_time">版本时间</label>
+        <input type="text" id="version_time", name="version_time"><br><br>
+        <label for="version_info">版本信息</label>
+        <input type="text" id="version_info", name="version_info"><br><br>
+        <label for="p4_commit">P4版本号</label>
+        <input type="text" id="p4_commit" name="p4_commit"><br><br>
+    <div>
+    <br>
+    <div>
+        <label for="version_change">版本更新内容</label><br>
+        <textarea name="version_change" id="version_change" rows="30" cols="100">
+        </textarea>
+    </div>
+
+    <input type="submit" name="submit" value="Submit" />
+</form>
+
+</body>
+</html>
+
