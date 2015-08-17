@@ -1,0 +1,6 @@
+<?php
+$DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
+$VERSION_FILE="$DOCUMENT_ROOT/version.txt";
+$CHANGE_FILE="$DOCUMENT_ROOT/change.txt";
+
+?>
