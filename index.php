@@ -1,7 +1,9 @@
 <?php
     require_once("./global.php");
     $version = file($VERSION_FILE, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $versionArray = array_values(array_filter($version, "trim"));
     $updateR = file($CHANGE_FILE, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $updateRArray = array_values(array_filter($updateR, "trim"));
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +60,7 @@
                     <div class="version" id="version_info">
                         <ul>
                         <?php
-                            foreach ($version as $line) {
+                            foreach ($versionArray as $line) {
                                 echo "<li>$line</li>";
                             }
                         ?>
@@ -68,9 +70,8 @@
                         <p align="center" style="font-size:20px"> 版本更新内容</p>
                         <ol>
                         <?php
-                            foreach($updateR as $line) {
-                                $array = preg_split("/\s+/", trim($line));
-                                echo "<li>$array[1]</li>";
+                            foreach($updateRArray as $line) {
+                                echo "<li>$line</li>";
                             }
                         ?>
                         </ol>
