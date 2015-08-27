@@ -4,7 +4,6 @@
     $versionArray = array_values(array_filter($version, "trim"));
     $updateR = file($CHANGE_FILE, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     $updateRArray = array_values(array_filter($updateR, "trim"));
-    var_dump($updateRArray);
 ?>
 
 <!DOCTYPE html>
