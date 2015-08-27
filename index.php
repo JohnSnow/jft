@@ -4,6 +4,7 @@
     $versionArray = array_values(array_filter($version, "trim"));
     $updateR = file($CHANGE_FILE, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     $updateRArray = array_values(array_filter($updateR, "trim"));
+    var_dump($updateRArray);
 ?>
 
 <!DOCTYPE html>
@@ -66,16 +67,18 @@
                         ?>
                         </ul>
                     </div>
-                    <div class="update context-padded" id="update_info">
-                        <p align="center" style="font-size:20px"> 版本更新内容</p>
-                        <ol>
-                        <?php
+                    <?php
+                        if(count($updateRArray) > 0) {
+                            $html = '<div class="update context-padded" id="update_info">
+                                <p align="center" style="font-size:20px"> 版本更新内容</p>
+                                <ol>';
                             foreach($updateRArray as $line) {
-                                echo "<li>$line</li>";
+                                $html .= "<li>$line</li>";
                             }
-                        ?>
-                        </ol>
-                    </div>
+                            $html .= '</ol> </div>';
+                            echo $html;
+                        }
+                    ?>
                 </div>
             </div>
             <div class="column control-content" id="android_download">

@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"-->
+        <meta charset="utf-8">
+        <title>测试区</title>
+    </head>
+    <body>
 <?php
 
 require_once("./global.php");
@@ -21,3 +29,6 @@ fclose($fp1);
 
 echo "<p><strong>更新信息成功</p>";
 ?>
+
+    </body>
+</html>
