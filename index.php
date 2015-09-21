@@ -43,9 +43,6 @@
                         <a class="btn btn-block btn-primary" data-ignore="push" href="http://192.168.1.253/server.crt">
                             <span class="icon icon-download"></span>IOS7.1+先安装证书
                         </a>
-                        <a class="btn btn-block btn-primary" data-ignore="push" href="itms-services:///?action=download-manifest&url=https://123.59.41.14:4443/download_ssl.plist">
-                            <span class="icon icon-download"></span><strong>点此下载正式版</strong>
-                        </a>
                     </div>
                     <div id="normal_download">
                         <a class="btn btn-block btn-primary" data-ignore="push" href="itms-services:///?action=download-manifest&url=https://123.59.41.14:4443/download_ssl.plist">
