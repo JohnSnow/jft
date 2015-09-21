@@ -4,5 +4,5 @@
 create change.txt and version.txt
 
 ```sh
-./setup.sh
+$ ./setup.sh
 ```
