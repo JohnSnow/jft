@@ -82,8 +82,8 @@
                     <p class="column" align="center">
                         <img src="./test_files/Icon.png" width="200px" height="200px">
                     </p>
-                    <a class="btn btn-block btn-primary " data-ignore="push" href="www.baidu.com">
-                        <span class="icon icon-close"></span><strong>不支持</strong>
+                     <a class="btn btn-block btn-primary " data-ignore="push" href="http://192.168.1.253/version/Battle_release.apk">
+                         <span class="icon icon-down"></span><strong>点击下载</strong>
                     </a>
                 </div>
             </div>
