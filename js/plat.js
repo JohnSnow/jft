@@ -2,7 +2,7 @@ var controlList = document.getElementsByClassName("control-item");
 
 if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent))
 {
-    if (/(7_1|8_0|8_1|8_2|8_3|8_4|9_0)/i.test(navigator.userAgent))
+    if (/(7_1|8_0|8_1|8_2|8_3|8_4|9_0|9_1)/i.test(navigator.userAgent))
     {
         document.getElementById("cer_download").style.display = '';
     }
