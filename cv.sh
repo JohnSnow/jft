@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+set -x
 # 这个脚本用来改变下载链接中ipa/apk的版本号
 # 用sudo 跑, 需要更改sudoers
 
@@ -27,11 +28,13 @@ else
 fi
 
 # change plist file
-ssh -p 6469 $RH sudo sed -i "s;Battle_release.*.ipa;Battle_release_${VERSION}.ipa;" $PLIST_FILE
+ssh -p 6469 $RH "sudo sed -i \"s;Battle_release.*.ipa;Battle_release_${VERSION}.ipa;\" $PLIST_FILE"
 
 # change ipa link
 if [[ $LOCAL == true ]]; then
     sed -i "s;Battle_release.*.apk;Battle_release_${VERSION}.apk;" $INDEX_PHP
 else
-    ssh -p 6469 sudo sed -i "s;Battle_release.*.apk;Battle_release_${VERSION}.apk;" $INDEX_PHP
+    ssh -p 6469 $RH "sudo sed -i \"s;Battle_release.*.apk;Battle_release_${VERSION}.apk;\" $INDEX_PHP"
 fi
+
+echo "success"
