@@ -1,13 +1,3 @@
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"-->
-        <meta charset="utf-8">
-        <title>测试区</title>
-    </head>
-    <body>
-
 <?php
 
     $version_number = trim($_POST['version_number']);
@@ -17,3 +7,6 @@
     copy($src_version_file, $dst_version_file);
     chmod($dst_version_file, 666);
 
+    shell_exec("sudo ./cv.sh");
+
+    header('Location: '. "/");

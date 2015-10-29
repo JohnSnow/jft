@@ -16,7 +16,7 @@ foreach ($files as $file) {
     </head>
 <body>
 
-<form action="select_version.php" method="post" enctype="multipart/form-data">
+<form action="handle_version.php" method="post" enctype="multipart/form-data">
     <div>
         <label for="version_info">版本信息</label>
         <select id="version_number" name="version_number">

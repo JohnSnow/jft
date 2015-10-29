@@ -11,7 +11,9 @@ function display_version_info() {
         var html = "";
         var len = splitted.length;
         for (var i = 0; i< len; i++) {
-            html += "<li>" + splitted[i]+ "</li>";
+            if (splitted[i]) {
+                html += "<li>" + splitted[i]+ "</li>";
+            }
         }
         $("#version_info").html(html);
     });
