@@ -54,7 +54,7 @@
                         <h5 class="docs-module-title" style="text-align:center;color:red"><a href="http://192.168.1.253">http://192.168.1.253/</a></h5>
                         <h5 class="docs-module-title" style="text-align:center;">长按拷贝链接 使用Safari打开</h5>
                     </div>
-                    <div class="version" id="version_info">
+
                         <ul>
                         <?php
                             foreach ($versionArray as $line) {
