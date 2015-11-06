@@ -75,7 +75,6 @@
                             echo $html;
                         }
                     ?>
-                </div>
             </div>
             <div class="column control-content" id="android_download">
                 <div class="docs-module">
